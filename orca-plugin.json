@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 2,
+  "execution": "declarative",
+  "id": "conch",
+  "publisher": "Amitgb14",
+  "name": "conch sandboxes",
+  "version": "0.1.0",
+  "description": "Run each Orca workspace in a cloud sandbox from Daytona, Hetzner, InstaBox, DigitalOcean and more: created with the workspace, asleep when it sleeps, deleted with it. Nothing else to install.",
+  "icon": "assets/icon.png",
+  "author": {
+    "name": "Amitgb14",
+    "url": "https://github.com/Amitgb14"
+  },
+  "repository": "https://github.com/Amitgb14/conch-orca-plugin",
+  "license": "Apache-2.0",
+  "engines": {
+    "orca": ">=1.4.245"
+  },
+  "contributes": {
+    "vmRecipes": []
+  }
+}

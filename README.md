@@ -45,7 +45,7 @@ The recipes are generated from conch-integrations' published index, so a
 provider added there becomes a new release here:
 
 ```sh
-node scripts/build-recipes.mjs --launcher ~/workspace/conch/scripts/conch-sandbox.sh
+node scripts/build-recipes.mjs --launcher ~/Downloads/conch-sandbox.sh   # a release's launcher, pins filled in
 node --test test/*.test.mjs
 ```
 
@@ -55,5 +55,7 @@ Early. Recipes follow the format of published Orca VM-recipe plugins. Not
 yet run in Orca. To check: how Orca hands `userData` back to suspend and
 destroy (read here as `ORCA_VM_INSTANCE_ID`), and whether resume may return
 a new connection.
+
+Not usable without conch yet: the launcher pins a local `0.2.1-dev` build, not a published release, and conch-sandbox installs provider files only from a signed registry index, which conch's registry does not publish yet. Until both land, it works only with provider files conch has already installed and a launcher pointed at a local build (`CONCH_SANDBOX_URL`).
 
 Apache-2.0.

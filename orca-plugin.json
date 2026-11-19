@@ -17,6 +17,31 @@
     "orca": ">=1.4.245"
   },
   "contributes": {
-    "vmRecipes": []
+    "vmRecipes": [
+      {
+        "path": "recipes/boat.json"
+      },
+      {
+        "path": "recipes/daytona.json"
+      },
+      {
+        "path": "recipes/digitalocean.json"
+      },
+      {
+        "path": "recipes/hetzner.json"
+      },
+      {
+        "path": "recipes/instabox.json"
+      },
+      {
+        "path": "recipes/mosaic.json"
+      },
+      {
+        "path": "recipes/namespace.json"
+      },
+      {
+        "path": "recipes/tensorlake.json"
+      }
+    ]
   }
 }

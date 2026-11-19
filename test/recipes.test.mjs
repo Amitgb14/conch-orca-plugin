@@ -63,7 +63,7 @@ test("a generated command runs the launcher, which runs conch-sandbox with the r
   const dir = mkdtempSync(path.join(tmpdir(), "orca-recipe-"));
   const log = path.join(dir, "args");
   const fake = path.join(dir, "conch-sandbox");
-  writeFileSync(fake, `#!/bin/sh\nif [ "$1" = "--version" ]; then echo "conch-sandbox ${want}"; exit 0; fi\nprintf '%s\\n' "$@" > "${log}"\nprintf 'ws=%s\\n' "$ORCA_WORKSPACE_NAME" >> "${log}"\n`);
+  writeFileSync(fake, `#!/bin/sh\nif [ "$1" = "version" ]; then echo "${want}"; exit 0; fi\nprintf '%s\\n' "$@" > "${log}"\nprintf 'ws=%s\\n' "$ORCA_WORKSPACE_NAME" >> "${log}"\n`);
   chmodSync(fake, 0o755);
 
   const cmd = command(Buffer.from(text).toString("base64"), "create", "hetzner", true);

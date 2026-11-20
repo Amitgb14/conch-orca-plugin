@@ -2,7 +2,7 @@
   "manifestVersion": 2,
   "execution": "declarative",
   "id": "conch",
-  "publisher": "Amitgb14",
+  "publisher": "amitgb14",
   "name": "conch sandboxes",
   "version": "0.1.0",
   "description": "Run each Orca workspace in a cloud sandbox from Daytona, Hetzner, InstaBox, DigitalOcean and more: created with the workspace, asleep when it sleeps, deleted with it. Nothing else to install.",
